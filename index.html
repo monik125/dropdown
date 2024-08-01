@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="maindiv">
+        <div id="input">
+            <h1>Input</h1>
+            <select id="country" required>
+                <option value="">Select country</option>
+            </select>
+            <br>
+            <select id="state" required>
+                <option value="">Select state</option>
+            </select>
+            <br>
+            <select id="city" required>
+                <option value="">Select city</option>
+            </select>
+            <br>
+            <button id="resbtn" type="button" onclick="resetDropdown()">Reset</button>
+            <button id="subbtn" type="button" onclick="submitDropdown()">Submit</button>
+            <br>
+        </div>
+        <div id="output">
+            <h1>Output</h1>
+            <p id="outcountry"></p>
+            <p id="outstate"></p>
+            <p id="outcity"></p>
+        </div>
+    </div>
+    <script src="dropdown.js"></script>
+</body>
+</html>
